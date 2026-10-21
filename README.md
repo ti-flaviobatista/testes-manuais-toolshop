@@ -14,6 +14,7 @@ Os casos de teste foram escritos a partir dos critérios de aceite das [históri
 | --- | --- |
 | [Plano de testes](plano-de-testes.md) | Objetivo, escopo, ambiente, estratégia, técnicas, massa de dados, critérios e riscos |
 | [Casos de teste](casos-de-teste.md) | 34 casos de teste com passos, resultado esperado e rastreabilidade com os requisitos |
+| [Cenários BDD](cenarios-bdd) | Os mesmos 34 casos escritos em Gherkin (Dado/Quando/Então), com Esquemas do Cenário para dados variados |
 | [Bugs encontrados](../../issues) | Defeitos registrados como Issues, com passos para reproduzir e evidências |
 
 ## Técnicas aplicadas
@@ -22,6 +23,7 @@ Os casos de teste foram escritos a partir dos critérios de aceite das [históri
 - Análise de valor limite
 - Tabela de decisão
 - Testes exploratórios
+- BDD (Behavior Driven Development) com Gherkin
 
 ## Ambiente
 
