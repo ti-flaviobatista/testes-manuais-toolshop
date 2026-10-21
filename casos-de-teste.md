@@ -2,6 +2,7 @@
 
 Versão testada: https://with-bugs.practicesoftwaretesting.com
 Requisitos: [Histórias de usuário – Sprint 5](https://testsmith-io.github.io/practice-software-testing/#/user-stories/v5)
+Versão em BDD (Gherkin): pasta [cenarios-bdd](cenarios-bdd)
 
 **Como ler esta página:** cada caso tem um código (CT-01, CT-02...), os passos para executar, o resultado esperado e o critério de aceite de referência. A coluna **Status** recebe ✅ Passou, ❌ Falhou ou ⏸️ Bloqueado. Quando falha, a coluna **Bug** recebe o número da Issue.
 
@@ -17,7 +18,7 @@ Requisitos: [Histórias de usuário – Sprint 5](https://testsmith-io.github.io
 
 | ID | Cenário | Passos | Resultado esperado | Ref. | Status | Bug |
 | --- | --- | --- | --- | --- | --- | --- |
-| CT-01 | Exibir a lista de produtos | 1. Abrir a página inicial | Grade de produtos com imagem, nome e preço em cada cartão | Catálogo AC1 | Não executado | |
+| CT-01 | Exibir a lista de produtos | 1. Abrir a página inicial<br>2. Conferir os cartões de produto em todas as páginas da lista, usando a paginação para avançar | Todos os produtos, em todas as páginas, exibem imagem, nome e preço | Catálogo AC1 | Não executado | |
 | CT-02 | Abrir o detalhe de um produto | 1. Clicar em um cartão de produto | Página de detalhe do produto clicado é aberta | Catálogo AC2 | Não executado | |
 | CT-03 | Navegar pela paginação | 1. Rolar até o fim da lista<br>2. Clicar na página 2 | A grade mostra outros produtos e a página 2 fica destacada | Catálogo AC3 | Não executado | |
 | CT-04 | Buscar com termo válido | 1. Digitar `hammer` na busca<br>2. Clicar em Search | Somente produtos com "hammer" no nome são exibidos | Catálogo AC4 | Não executado | |
