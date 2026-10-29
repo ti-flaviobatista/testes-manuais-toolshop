@@ -6,7 +6,7 @@
 | Versão testada | Sprint 5 *with bugs* – https://with-bugs.practicesoftwaretesting.com |
 | Requisitos de referência | [Histórias de usuário – Sprint 5](https://testsmith-io.github.io/practice-software-testing/#/user-stories/v5) |
 | Responsável | Flávio da Silva Batista |
-| Versão do documento | 1.0 |
+| Versão do documento | 1.1 (inclusão dos critérios de prioridade e da fonte das definições na seção 9) |
 
 ## 1. Objetivo
 
@@ -106,12 +106,37 @@ Dados de pagamento são fictícios (exemplo: cartão `1111-1111-1111-1111`). Nen
 
 Cada defeito é registrado como uma **Issue** neste repositório, com: título, ambiente, pré-condição, passos para reproduzir, resultado esperado, resultado obtido, severidade, prioridade e evidência.
 
+### 9.1 Fonte das definições
+
+O conteúdo do relatório de defeito e as definições de severidade e prioridade seguem o **ISTQB Certified Tester Foundation Level – Syllabus v4.0.1**, seção 5.5 (Gestão de Defeitos), página 57. Segundo o syllabus, o relatório de defeito traz, entre outros dados:
+
+- **Severidade:** o grau de impacto do defeito sobre os interesses das partes interessadas ou sobre os requisitos.
+- **Prioridade:** a urgência para corrigir o defeito.
+
+O syllabus **não define níveis** de severidade nem de prioridade. Por isso, as escalas das seções 9.2 e 9.3 foram definidas para este projeto.
+
+Fonte: [ISTQB CTFL Syllabus v4.0.1 (PDF oficial)](https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf)
+
+### 9.2 Severidade (impacto no sistema)
+
 | Severidade | Quando usar |
 | --- | --- |
 | Crítica | Impede a compra ou o acesso, ou causa cobrança errada |
-| Alta | Funcionalidade principal falha e não há contorno |
+| Alta | Funcionalidade principal falha e não há contorno, ou expõe dados ou a segurança da conta |
 | Média | Funcionalidade falha, mas existe contorno |
 | Baixa | Problema visual, de texto ou de usabilidade que não impede o uso |
+
+### 9.3 Prioridade (urgência da correção)
+
+| Prioridade | Quando usar | Prazo sugerido |
+| --- | --- | --- |
+| Alta | Impede o cliente de concluir o fluxo principal (encontrar produto → carrinho → pagamento) ou expõe dados ou a segurança da conta | Antes da próxima versão |
+| Média | Atrapalha o fluxo principal mas tem contorno, passa informação errada ao cliente, ou aparece em todas as páginas e prejudica a imagem da loja | Na próxima versão |
+| Baixa | Problema cosmético em ponto pouco visível, que não confunde o cliente | Quando houver espaço |
+
+**Severidade e prioridade são independentes.** Exemplo deste projeto: o logo quebrado ([#18](../../issues/18)) tem severidade **Baixa**, porque não impede nenhum uso, mas prioridade **Média**, porque aparece em todas as páginas e é a primeira coisa que o cliente vê.
+
+Em um projeto real, a prioridade costuma ser confirmada pelo Product Owner ou pelo time, porque depende das necessidades do negócio. Neste projeto de estudo, ela foi definida pelo testador seguindo a tabela acima.
 
 ## 10. Entregáveis
 
